@@ -683,6 +683,7 @@ Activating environment at &#96;~/build/joaoluisro/JSOTutorials.jl/basics/create
  </span><span class='hljl-so'>pkg&quot;add SolverTools&quot;</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add SolverBenchmark&quot;</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add Plots&quot;</span><span class='hljl-t'>
+ </span><span class='hljl-so'>pkg&quot;add PyPlot&quot;</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add LinearAlgebra&quot;</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add JSOSolvers&quot;</span><span class='hljl-t'>
 </span><span class='hljl-k'>end</span><span class='hljl-t'>
@@ -693,62 +694,62 @@ Activating environment at &#96;~/build/joaoluisro/JSOTutorials.jl/basics/create
 <pre class="output">
 Updating registry at &#96;~/.julia/registries/General&#96;
   Updating git-repo &#96;https://github.com/JuliaRegistries/General.git&#96;
-erOutputs ───────── v0.5.3
- Installed NaNMath ────────────── v0.3.3
+&#91;?25l&#91;2K&#91;?25h Installed NaNMath ────────────── v0.3.3
+ Installed TimerOutputs ───────── v0.5.3
+ Installed PlotUtils ──────────── v0.6.1
  Installed DiffResults ────────── v0.0.4
  Installed DiffRules ──────────── v0.1.0
- Installed MbedTLS ────────────── v0.6.8
- Installed StatsBase ──────────── v0.32.0
- Installed PlotUtils ──────────── v0.6.1
  Installed Plots ──────────────── v0.28.1
- Installed BenchmarkProfiles ──── v0.3.0
+ Installed StatsBase ──────────── v0.32.0
+ Installed MbedTLS ────────────── v0.6.8
  Installed IterTools ──────────── v1.3.0
+ Installed HTTP ───────────────── v0.8.8
+ Installed BenchmarkProfiles ──── v0.3.0
  Installed FFMPEG ─────────────── v0.2.3
- Installed Measures ───────────── v0.3.0
  Installed CategoricalArrays ──── v0.7.3
+ Installed Measures ───────────── v0.3.0
  Installed GeometryTypes ──────── v0.7.6
  Installed DataFrames ─────────── v0.19.4
- Installed HTTP ───────────────── v0.8.8
  Installed LinearOperators ────── v0.7.1
- Installed BinDeps ────────────── v0.8.10
  Installed PlotThemes ─────────── v1.0.0
- Installed ProgressMeter ──────── v1.2.0
+ Installed BinDeps ────────────── v0.8.10
  Installed Showoff ────────────── v0.3.1
- Installed BenchmarkTools ─────── v0.4.3
- Installed PkgBenchmark ───────── v0.2.6
+ Installed ProgressMeter ──────── v1.2.0
  Installed ArgCheck ───────────── v1.0.1
- Installed Requires ───────────── v0.5.2
- Installed RecipesBase ────────── v0.7.0
- Installed FastClosures ───────── v0.3.2
+ Installed BenchmarkTools ─────── v0.4.3
  Installed StaticArrays ───────── v0.12.1
+ Installed Requires ───────────── v0.5.2
  Installed SpecialFunctions ───── v0.8.0
+ Installed FastClosures ───────── v0.3.2
+ Installed PkgBenchmark ───────── v0.2.6
+ Installed RecipesBase ────────── v0.7.0
  Installed LaTeXTabulars ──────── v0.1.1
- Installed GitHub ─────────────── v5.1.3
  Installed DataStructures ─────── v0.17.6
+ Installed GitHub ─────────────── v5.1.3
+ Installed FixedPointNumbers ──── v0.6.1
  Installed ColorTypes ─────────── v0.8.0
- Installed InvertedIndices ────── v1.0.0
  Installed ForwardDiff ────────── v0.10.7
  Installed NLPModels ──────────── v0.9.0
+ Installed InvertedIndices ────── v1.0.0
  Installed SolverTools ────────── v0.1.6
- Installed FixedPointNumbers ──── v0.6.1
- Installed Crayons ────────────── v4.0.1
- Installed SortingAlgorithms ──── v0.3.1
- Installed Colors ─────────────── v0.9.6
- Installed Reexport ───────────── v0.2.0
- Installed OrderedCollections ─── v1.1.0
- Installed Formatting ─────────── v0.4.1
- Installed PooledArrays ───────── v0.5.2
- Installed Parameters ─────────── v0.12.0
- Installed URIParser ──────────── v0.4.0
- Installed BinaryProvider ─────── v0.5.8
- Installed CommonSubexpressions ─ v0.2.0
- Installed IniFile ────────────── v0.5.0
- Installed Krylov ─────────────── v0.3.0
- Installed PrettyTables ───────── v0.7.0
- Installed JSOSolvers ─────────── v0.1.0
- Installed Missings ───────────── v0.4.3
  Installed GR ─────────────────── v0.44.0
+ Installed Colors ─────────────── v0.9.6
+ Installed SortingAlgorithms ──── v0.3.1
+ Installed Reexport ───────────── v0.2.0
+ Installed Crayons ────────────── v4.0.1
+ Installed Formatting ─────────── v0.4.1
+ Installed URIParser ──────────── v0.4.0
+ Installed OrderedCollections ─── v1.1.0
+ Installed Parameters ─────────── v0.12.0
+ Installed PooledArrays ───────── v0.5.2
+ Installed BinaryProvider ─────── v0.5.8
+ Installed IniFile ────────────── v0.5.0
+ Installed CommonSubexpressions ─ v0.2.0
+ Installed PrettyTables ───────── v0.7.0
+ Installed Missings ───────────── v0.4.3
+ Installed Krylov ─────────────── v0.3.0
  Installed Contour ────────────── v0.5.1
+ Installed JSOSolvers ─────────── v0.1.0
  Installed SolverBenchmark ────── v0.1.0
   Building GR ──────────────→ &#96;~/.julia/packages/GR/oiZD3/deps/build.log&#96;
   Building FFMPEG ──────────→ &#96;~/.julia/packages/FFMPEG/bkWgb/deps/build.lo
@@ -782,7 +783,7 @@ ct.toml&#96;
 </pre>
 
 
-<p>This tutorial covers the basics on how to create a solver compatible with the JuliaSmoothOptimizers format and do basic benchmarking. Let&#39;s start off with a simple implementation of Newton&#39;s method:</p>
+<p>This tutorial covers the basics on how to create a solver compatible with the JuliaSmoothOptimizers format and how to perform basic benchmarking. Let&#39;s start off with a simple implementation of Newton&#39;s method.</p>
 
 
 <pre class='hljl'>
@@ -794,35 +795,47 @@ ct.toml&#96;
                 </span><span class='hljl-n'>max_time</span><span class='hljl-t'> </span><span class='hljl-oB'>::</span><span class='hljl-t'> </span><span class='hljl-n'>Float64</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>30.0</span><span class='hljl-p'>,</span><span class='hljl-t'>
                 </span><span class='hljl-n'>max_iter</span><span class='hljl-t'> </span><span class='hljl-oB'>::</span><span class='hljl-t'> </span><span class='hljl-n'>Int</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>100</span><span class='hljl-p'>)</span><span class='hljl-t'>
 
+	</span><span class='hljl-n'>fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
+	</span><span class='hljl-n'>∇fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>grad</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
+	</span><span class='hljl-n'>nrmgrad</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>norm</span><span class='hljl-p'>(</span><span class='hljl-n'>∇fx</span><span class='hljl-p'>)</span><span class='hljl-t'>
+	</span><span class='hljl-n'>∇²fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>Symmetric</span><span class='hljl-p'>(</span><span class='hljl-nf'>hess</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>),</span><span class='hljl-t'> </span><span class='hljl-sc'>:L</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
   </span><span class='hljl-n'>T</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>eltype</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
   </span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-t'>
   </span><span class='hljl-n'>el_time</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.0</span><span class='hljl-t'>
   </span><span class='hljl-n'>start_time</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>time</span><span class='hljl-p'>()</span><span class='hljl-t'>
   </span><span class='hljl-n'>tired</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>el_time</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;</span><span class='hljl-t'> </span><span class='hljl-n'>max_time</span><span class='hljl-t'> </span><span class='hljl-oB'>||</span><span class='hljl-t'> </span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-oB'>≥</span><span class='hljl-t'> </span><span class='hljl-n'>max_iter</span><span class='hljl-t'>
-  </span><span class='hljl-n'>optimal</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>norm</span><span class='hljl-p'>(</span><span class='hljl-nf'>grad</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>))</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;</span><span class='hljl-t'> </span><span class='hljl-n'>max_tol</span><span class='hljl-t'>
+  </span><span class='hljl-n'>optimal</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>nrmgrad</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;</span><span class='hljl-t'> </span><span class='hljl-n'>max_tol</span><span class='hljl-t'>
 
   </span><span class='hljl-nd'>@info</span><span class='hljl-t'> </span><span class='hljl-nf'>log_header</span><span class='hljl-p'>([</span><span class='hljl-sc'>:iter</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:f</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:nrmgrad</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-n'>Int</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>T</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>T</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-n'>hdr_override</span><span class='hljl-oB'>=</span><span class='hljl-nf'>Dict</span><span class='hljl-p'>(</span><span class='hljl-sc'>:f</span><span class='hljl-t'> </span><span class='hljl-oB'>=&gt;</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;f(x)&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:nrmgrad</span><span class='hljl-t'> </span><span class='hljl-oB'>=&gt;</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;‖∇f(x)‖&quot;</span><span class='hljl-p'>))</span><span class='hljl-t'>
 
   </span><span class='hljl-k'>while</span><span class='hljl-t'> </span><span class='hljl-oB'>!</span><span class='hljl-p'>(</span><span class='hljl-n'>optimal</span><span class='hljl-t'> </span><span class='hljl-oB'>||</span><span class='hljl-t'> </span><span class='hljl-n'>tired</span><span class='hljl-p'>)</span><span class='hljl-t'>
 
-    </span><span class='hljl-n'>fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
-    </span><span class='hljl-n'>∇fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>grad</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
-    </span><span class='hljl-n'>nrmgrad</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>norm</span><span class='hljl-p'>(</span><span class='hljl-n'>∇fx</span><span class='hljl-p'>)</span><span class='hljl-t'>
-    </span><span class='hljl-n'>∇²fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>Symmetric</span><span class='hljl-p'>(</span><span class='hljl-nf'>hess</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>),</span><span class='hljl-t'> </span><span class='hljl-sc'>:L</span><span class='hljl-p'>)</span><span class='hljl-t'>
-
     </span><span class='hljl-nd'>@info</span><span class='hljl-t'> </span><span class='hljl-nf'>log_row</span><span class='hljl-p'>(</span><span class='hljl-n'>Any</span><span class='hljl-p'>[</span><span class='hljl-n'>k</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>fx</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>nrmgrad</span><span class='hljl-p'>])</span><span class='hljl-t'>
 
-    </span><span class='hljl-n'>d</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>isposdef</span><span class='hljl-p'>(</span><span class='hljl-n'>∇²fx</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>?</span><span class='hljl-t'> </span><span class='hljl-n'>∇²fx</span><span class='hljl-oB'>\</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-n'>∇fx</span><span class='hljl-t'> </span><span class='hljl-oB'>:</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-n'>∇fx</span><span class='hljl-t'>
+    </span><span class='hljl-n'>newton_step</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-n'>∇²fx</span><span class='hljl-oB'>\</span><span class='hljl-n'>∇fx</span><span class='hljl-t'>
+    </span><span class='hljl-n'>d</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>dot</span><span class='hljl-p'>(</span><span class='hljl-n'>step</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-n'>∇fx</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;</span><span class='hljl-t'> </span><span class='hljl-ni'>0</span><span class='hljl-t'> </span><span class='hljl-oB'>?</span><span class='hljl-t'> </span><span class='hljl-n'>newton_step</span><span class='hljl-t'> </span><span class='hljl-oB'>:</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-n'>∇fx</span><span class='hljl-t'>
     </span><span class='hljl-n'>t</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>one</span><span class='hljl-p'>(</span><span class='hljl-n'>T</span><span class='hljl-p'>)</span><span class='hljl-t'>
     </span><span class='hljl-n'>α</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.5</span><span class='hljl-t'>
+		</span><span class='hljl-n'>slope</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>dot</span><span class='hljl-p'>(</span><span class='hljl-n'>∇fx</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-oB'>*</span><span class='hljl-n'>d</span><span class='hljl-p'>)</span><span class='hljl-t'>
+		</span><span class='hljl-n'>xt</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-oB'>*</span><span class='hljl-n'>d</span><span class='hljl-t'>
+		</span><span class='hljl-n'>ft</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>xt</span><span class='hljl-p'>)</span><span class='hljl-t'>
 
-    </span><span class='hljl-k'>while</span><span class='hljl-t'> </span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-oB'>*</span><span class='hljl-n'>d</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;</span><span class='hljl-t'> </span><span class='hljl-n'>fx</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>α</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-n'>∇fx</span><span class='hljl-oB'>&#39;</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-n'>d</span><span class='hljl-t'>
+    </span><span class='hljl-k'>while</span><span class='hljl-t'> </span><span class='hljl-n'>ft</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;</span><span class='hljl-t'> </span><span class='hljl-n'>fx</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>α</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-n'>slope</span><span class='hljl-t'>
       </span><span class='hljl-n'>t</span><span class='hljl-t'> </span><span class='hljl-oB'>*=</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.5</span><span class='hljl-t'>
+			</span><span class='hljl-n'>xt</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-oB'>*</span><span class='hljl-n'>d</span><span class='hljl-t'>
+			</span><span class='hljl-n'>ft</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>xt</span><span class='hljl-p'>)</span><span class='hljl-t'>
+			</span><span class='hljl-n'>slope</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'>  </span><span class='hljl-nf'>dot</span><span class='hljl-p'>(</span><span class='hljl-n'>∇fx</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-oB'>*</span><span class='hljl-n'>d</span><span class='hljl-p'>)</span><span class='hljl-t'>
     </span><span class='hljl-k'>end</span><span class='hljl-t'>
 
     </span><span class='hljl-n'>x</span><span class='hljl-t'> </span><span class='hljl-oB'>+=</span><span class='hljl-t'> </span><span class='hljl-n'>t</span><span class='hljl-oB'>*</span><span class='hljl-n'>d</span><span class='hljl-t'>
 
-    </span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-oB'>+=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-t'>
+		</span><span class='hljl-n'>fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
+    </span><span class='hljl-n'>∇fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>grad</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'>
+    </span><span class='hljl-n'>nrmgrad</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>norm</span><span class='hljl-p'>(</span><span class='hljl-n'>∇fx</span><span class='hljl-p'>)</span><span class='hljl-t'>
+    </span><span class='hljl-n'>∇²fx</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>Symmetric</span><span class='hljl-p'>(</span><span class='hljl-nf'>hess</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>),</span><span class='hljl-t'> </span><span class='hljl-sc'>:L</span><span class='hljl-p'>)</span><span class='hljl-t'>
+
+		</span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-oB'>+=</span><span class='hljl-t'> </span><span class='hljl-ni'>1</span><span class='hljl-t'>
     </span><span class='hljl-n'>el_time</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>time</span><span class='hljl-p'>()</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-n'>start_time</span><span class='hljl-t'>
     </span><span class='hljl-n'>tired</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>el_time</span><span class='hljl-t'> </span><span class='hljl-oB'>&gt;</span><span class='hljl-t'> </span><span class='hljl-n'>max_time</span><span class='hljl-t'> </span><span class='hljl-oB'>||</span><span class='hljl-t'> </span><span class='hljl-n'>k</span><span class='hljl-t'> </span><span class='hljl-oB'>≥</span><span class='hljl-t'> </span><span class='hljl-n'>max_iter</span><span class='hljl-t'>
     </span><span class='hljl-n'>optimal</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>nrmgrad</span><span class='hljl-t'> </span><span class='hljl-oB'>&lt;</span><span class='hljl-t'> </span><span class='hljl-n'>max_tol</span><span class='hljl-t'>
@@ -840,7 +853,7 @@ ct.toml&#96;
     </span><span class='hljl-n'>status</span><span class='hljl-t'> </span><span class='hljl-oB'>=:</span><span class='hljl-n'>unknown</span><span class='hljl-t'>
   </span><span class='hljl-k'>end</span><span class='hljl-t'>
 
-  </span><span class='hljl-k'>return</span><span class='hljl-t'> </span><span class='hljl-nf'>GenericExecutionStats</span><span class='hljl-p'>(</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>solution</span><span class='hljl-oB'>=</span><span class='hljl-n'>x</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>objective</span><span class='hljl-oB'>=</span><span class='hljl-nf'>obj</span><span class='hljl-p'>(</span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>),</span><span class='hljl-t'>
+  </span><span class='hljl-k'>return</span><span class='hljl-t'> </span><span class='hljl-nf'>GenericExecutionStats</span><span class='hljl-p'>(</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>nlp</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>solution</span><span class='hljl-oB'>=</span><span class='hljl-n'>x</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>objective</span><span class='hljl-oB'>=</span><span class='hljl-n'>fx</span><span class='hljl-p'>,</span><span class='hljl-t'>
                                </span><span class='hljl-n'>iter</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>k</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>elapsed_time</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>el_time</span><span class='hljl-p'>)</span><span class='hljl-t'>
 
 </span><span class='hljl-k'>end</span>
@@ -856,30 +869,63 @@ newton &#40;generic function with 1 method&#41;
 <ul>
 <li><p>It receives the <strong>JSO Standard input</strong>, an <strong>AbtractNLPModel</strong>, part of the <a href="https://github.com/JuliaSmoothOptimizers/NLPModels.jl">NLPModels</a> package.</p>
 </li>
-<li><p>Derivatives are computed according to the <strong>AbstractNLPModel</strong> implementation with the <span class="math">$hess$</span> and <span class="math">$grad$</span> functions.</p>
+<li><p>Derivatives are computed according to the <strong>AbstractNLPModel</strong> API using the <code>hess</code> and <code>grad</code> functions.</p>
 </li>
 <li><p>It returns the <strong>JSO Standard output</strong>, a <strong>GenericExecutionStats</strong>, part of the <a href="https://github.com/JuliaSmoothOptimizers/SolverTools.jl">SolverTools</a> package.</p>
 </li>
 </ul>
-<p>Both input and output are important when interacting with other JSO packages, since they serve as a way of solving a optimization problem while also keeping track of relevant information. An <strong>AbstractNLPModel</strong> is the main structure of the problem, as it contains details regarding its description &#40;i.e function to be minimized, starting point, number of variables, etc.&#41;, while a <strong>GenericExecutionStats</strong> is responsible for carrying information over how the problem was solved &#40;i.e number of iterations, time elapsed, number of function evaluations, etc.&#41;.</p>
-<p>Another important thing to highlight, is that we&#39;ll be using the <strong>ADNLPModel</strong> struct to run our solver. By default, the package responsible for calculating derivatives is <a href="https://github.com/JuliaDiff/ForwardDiff.jl">ForwardDiff</a> since that&#39;s the built in method for differentation in this <strong>AbstractNLPModel</strong> implementation.</p>
-<p>When creating a new JSO compatible solver, it&#39;s also important to manipulate the output data to match that of <strong>GenericExecutionStats</strong>. The <span class="math">$status$</span> attribute tells us about how our solver did given our input problem. It is possible that the number of iterations has exceed the max limit, or the time it took for it to solve was greater than allowed. Either way, the <span class="math">$status$</span> is an important attribute when benchmarking and testing, as it allows the user to keep track of how a solver behaves over a specific problem.</p>
+<p>Both input and output are important when interacting with other JSO packages. An <strong>AbstractNLPModel</strong> is the main structure of the problem, as it contains details regarding its description &#40;i.e. function to be minimized, starting point, number of variables, etc.&#41;, while a <strong>GenericExecutionStats</strong> is responsible for carrying information over how the problem was solved &#40;i.e. number of iterations, time elapsed, number of function evaluations, etc.&#41;.</p>
+<p>Another important thing to highlight, is that we&#39;ll be using the <strong>ADNLPModel</strong> struct to run our solver. <strong>ADNLPModel</strong> is a kind of <strong>AbstractNLPModel</strong>, that uses <a href="https://github.com/JuliaDiff/ForwardDiff.jl">ForwardDiff</a> to compute derivatives.</p>
+<p>When creating a new JSO compatible solver, it&#39;s also important to manipulate the output data to match that of <strong>GenericExecutionStats</strong>. The <code>status</code> attribute tells us about the result of the optimization given our input problem. It is possible that the number of iterations has exceed the maximum limit, or the time it took for it to solve was greater than allowed. Either way, the <span class="math">$status$</span> is an important attribute when benchmarking and testing, as it allows the user to keep track of how a solver behaves over a specific problem. It is possible to list all the currently acceptable statuses by running <code>SolverTools.show_statuses&#40;&#41;</code></p>
+
+
+<pre class='hljl'>
+<span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>SolverTools</span><span class='hljl-t'>
+	</span><span class='hljl-n'>SolverTools</span><span class='hljl-oB'>.</span><span class='hljl-nf'>show_statuses</span><span class='hljl-p'>()</span>
+</pre>
+
+
+<pre class="output">
+STATUSES:
+  :acceptable     &#61;&gt; solved to within acceptable tolerances
+  :exception      &#61;&gt; unhandled exception
+  :first_order    &#61;&gt; first-order stationary
+  :infeasible     &#61;&gt; problem may be infeasible
+  :max_eval       &#61;&gt; maximum number of function evaluations
+  :max_iter       &#61;&gt; maximum iteration
+  :max_time       &#61;&gt; maximum elapsed time
+  :neg_pred       &#61;&gt; negative predicted reduction
+  :not_desc       &#61;&gt; not a descent direction
+  :small_residual &#61;&gt; small residual
+  :small_step     &#61;&gt; step too small
+  :stalled        &#61;&gt; stalled
+  :unbounded      &#61;&gt; objective function may be unbounded from below
+  :unknown        &#61;&gt; unknown
+  :user           &#61;&gt; user-requested stop
+</pre>
+
+
 <p>If we want to run our solver, we simply need to create a optimization problem</p>
 
 
 <pre class='hljl'>
 <span class='hljl-nf'>f</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-p'>)</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'>
-  </span><span class='hljl-n'>problem</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>ADNLPModel</span><span class='hljl-p'>(</span><span class='hljl-n'>f</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-nfB'>1.0</span><span class='hljl-p'>,</span><span class='hljl-nfB'>2.0</span><span class='hljl-p'>])</span><span class='hljl-t'>
-  </span><span class='hljl-n'>output</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>newton</span><span class='hljl-p'>(</span><span class='hljl-n'>problem</span><span class='hljl-p'>)</span>
+</span><span class='hljl-n'>problem</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>ADNLPModel</span><span class='hljl-p'>(</span><span class='hljl-n'>f</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-nfB'>1.0</span><span class='hljl-p'>,</span><span class='hljl-nfB'>2.0</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-n'>output</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>newton</span><span class='hljl-p'>(</span><span class='hljl-n'>problem</span><span class='hljl-p'>)</span>
 </pre>
 
 
-<pre class="output">
-&quot;Execution stats: first-order stationary&quot;
+<pre class="julia-error">
+ERROR: MethodError: no method matching iterate&#40;::typeof&#40;step&#41;&#41;
+Closest candidates are:
+  iterate&#40;&#33;Matched::Core.SimpleVector&#41; at essentials.jl:600
+  iterate&#40;&#33;Matched::Core.SimpleVector, &#33;Matched::Any&#41; at essentials.jl:600
+  iterate&#40;&#33;Matched::ExponentialBackOff&#41; at error.jl:218
+  ...
 </pre>
 
 
-<p>whose information regarding its solution is stored in <span class="math">$output$</span>.</p>
+<p>The information regarding the solution of the problem is stored in <code>output</code>.</p>
 
 
 <pre class='hljl'>
@@ -887,21 +933,13 @@ newton &#40;generic function with 1 method&#41;
 </pre>
 
 
-<pre class="output">
-Generic Execution stats
-  status: &quot;first-order stationary&quot;
-  objective value: 1.0351524645125594e-12
-  primal feasibility: 0.0
-  dual feasibility: Inf
-  primal feasibility: 0.0
-  solution: &#91;0.00045109298973257644  0.0009021859794651527&#93;
-  iterations: 19
-  elapsed time: 0.8482589721679688
+<pre class="julia-error">
+ERROR: UndefVarError: output not defined
 </pre>
 
 
-<p>With a solver in hands, we can start to do more interesting things, such as benchmarking and comparing our <code>newton</code> method to other solvers. Since JSO contains a lot of useful packages, we&#39;ll be using a collection of those to make our comparison easier. The most important one by far is <a href="https://github.com/JuliaSmoothOptimizers/SolverBenchmark.jl">SolverBenchmarks</a>, a benchmarking package designed for manipulating DataFrames that contain statistics regarding the execution of a specific sover given a set of problems.</p>
-<p>Let us compare our <code>newton</code> method to a solver contained in the <a href="https://github.com/JuliaSmoothOptimizers/JSOSolvers.jl">JSOSolvers</a> package, namely the <code>lbfgs</code> one. Firstly, we&#39;ll need to gather our data regarding each solver.</p>
+<p>With a solver in hands, we can start to do more interesting things, such as benchmarking and comparing our <code>newton</code> method to other solvers. Since JSO contains a lot of useful packages, we&#39;ll be using a collection of those to make our comparison easier. The packages we&#39;ll be using are <a href="https://github.com/JuliaSmoothOptimizers/SolverTools.jl">SolverTools</a> and <a href="https://github.com/JuliaSmoothOptimizers/SolverBenchmark.jl">SolverBenchmarks</a>. The first is a package that provides tools for developing solvers, and the last, is a package that&#39;s designed for manipulating DataFrames that contain statistics regarding the execution of a specific solver given a set of problems.</p>
+<p>Let us compare our <code>newton</code> method to a solver contained in the <a href="https://github.com/JuliaSmoothOptimizers/JSOSolvers.jl">JSOSolvers</a> package, namely <code>lbfgs</code>, a line-search solver using limited memory BFGS updates. Firstly, we&#39;ll need to gather the data regarding each solver.</p>
 
 
 <pre class='hljl'>
@@ -909,10 +947,10 @@ Generic Execution stats
 </span><span class='hljl-n'>solvers</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>Dict</span><span class='hljl-p'>(</span><span class='hljl-sc'>:newton</span><span class='hljl-oB'>=&gt;</span><span class='hljl-n'>newton</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:lbfgs</span><span class='hljl-oB'>=&gt;</span><span class='hljl-n'>lbfgs</span><span class='hljl-p'>)</span><span class='hljl-t'>
 </span><span class='hljl-nf'>f1</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'>
 </span><span class='hljl-nf'>f2</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-ni'>1</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>])</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-ni'>100</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-p'>)</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'>
-</span><span class='hljl-nf'>f3</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-ni'>11</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-ni'>7</span><span class='hljl-p'>)</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'>
-</span><span class='hljl-nf'>f4</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.26</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.48</span><span class='hljl-oB'>*</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>*</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'>
+</span><span class='hljl-nf'>f3</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-ni'>11</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-ni'>7</span><span class='hljl-p'>)</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'>
+</span><span class='hljl-nf'>f4</span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.26</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-t'> </span><span class='hljl-oB'>+</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-oB'>^</span><span class='hljl-ni'>2</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-oB'>-</span><span class='hljl-t'> </span><span class='hljl-nfB'>0.48</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>1</span><span class='hljl-p'>]</span><span class='hljl-t'> </span><span class='hljl-oB'>*</span><span class='hljl-t'> </span><span class='hljl-n'>x</span><span class='hljl-p'>[</span><span class='hljl-ni'>2</span><span class='hljl-p'>]</span><span class='hljl-t'>
 </span><span class='hljl-n'>test_functions</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-n'>f1</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>f2</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>f3</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>f4</span><span class='hljl-p'>]</span><span class='hljl-t'>
-</span><span class='hljl-n'>problems</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-nf'>ADNLPModel</span><span class='hljl-p'>(</span><span class='hljl-n'>i</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>2</span><span class='hljl-oB'>*</span><span class='hljl-nf'>ones</span><span class='hljl-p'>(</span><span class='hljl-ni'>2</span><span class='hljl-p'>),</span><span class='hljl-n'>name</span><span class='hljl-oB'>=</span><span class='hljl-s'>&quot;Problem </span><span class='hljl-si'>$i</span><span class='hljl-s'>&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>for</span><span class='hljl-t'> </span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>test_functions</span><span class='hljl-p'>)</span><span class='hljl-t'>
+</span><span class='hljl-n'>problems</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>(</span><span class='hljl-nf'>ADNLPModel</span><span class='hljl-p'>(</span><span class='hljl-n'>i</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-ni'>2</span><span class='hljl-oB'>*</span><span class='hljl-nf'>ones</span><span class='hljl-p'>(</span><span class='hljl-ni'>2</span><span class='hljl-p'>),</span><span class='hljl-t'> </span><span class='hljl-n'>name</span><span class='hljl-oB'>=</span><span class='hljl-s'>&quot;Problem </span><span class='hljl-si'>$i</span><span class='hljl-s'>&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>for</span><span class='hljl-t'> </span><span class='hljl-n'>i</span><span class='hljl-t'> </span><span class='hljl-kp'>in</span><span class='hljl-t'> </span><span class='hljl-n'>test_functions</span><span class='hljl-p'>)</span><span class='hljl-t'>
 </span><span class='hljl-n'>stats</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-nf'>bmark_solvers</span><span class='hljl-p'>(</span><span class='hljl-n'>solvers</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>problems</span><span class='hljl-p'>)</span>
 </pre>
 
@@ -924,16 +962,16 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
 </pre>
 
 
-<p>The <span class="math">$bmark_solvers$</span> function is also part of the <strong>SolverTools</strong> package, and runs our solver on a set of problems, in our case <span class="math">$f1$</span>, <span class="math">$f2$</span>, <span class="math">$f3$</span> and <span class="math">$f4$</span>. Lastly, it returns a DataFrame of statistics that we can manipulate using <strong>SolverBenchmarks</strong>.</p>
+<p>The <span class="math">$bmark_solvers$</span> function is part of the <strong>SolverTools</strong> package, and runs our solver on a set of problems given by <code>problems</code>, in our case <code>f1</code>, <code>f2</code> , <code>f3</code> and <code>f4</code>. Lastly, it returns a dictionary <code>solver &#61;&gt; DataFrame</code>, where <code>DataFrame</code> is the execution data of that solver in the problems, that we can manipulate using <strong>SolverBenchmarks</strong>.</p>
 <p>Next, let&#39;s create a latex table with the data we just gathered</p>
 
 
 <pre class='hljl'>
-<span class='hljl-nf'>open</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;newton.tex&quot;</span><span class='hljl-p'>,</span><span class='hljl-s'>&quot;w&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>io</span><span class='hljl-t'>
-	</span><span class='hljl-nf'>latex_table</span><span class='hljl-p'>(</span><span class='hljl-n'>io</span><span class='hljl-p'>,</span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:newton</span><span class='hljl-p'>],</span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>objective</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>iter</span><span class='hljl-p'>])</span><span class='hljl-t'>
+<span class='hljl-nf'>open</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;newton.tex&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;w&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>io</span><span class='hljl-t'>
+  </span><span class='hljl-nf'>latex_table</span><span class='hljl-p'>(</span><span class='hljl-n'>io</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:newton</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:status</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:objective</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:iter</span><span class='hljl-p'>])</span><span class='hljl-t'>
 </span><span class='hljl-k'>end</span><span class='hljl-t'>
-</span><span class='hljl-nf'>open</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;lbfgs.tex&quot;</span><span class='hljl-p'>,</span><span class='hljl-s'>&quot;w&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>io</span><span class='hljl-t'>
-	</span><span class='hljl-nf'>latex_table</span><span class='hljl-p'>(</span><span class='hljl-n'>io</span><span class='hljl-p'>,</span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:lbfgs</span><span class='hljl-p'>],</span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>objective</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>iter</span><span class='hljl-p'>])</span><span class='hljl-t'>
+</span><span class='hljl-nf'>open</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;lbfgs.tex&quot;</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-s'>&quot;w&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>io</span><span class='hljl-t'>
+  </span><span class='hljl-nf'>latex_table</span><span class='hljl-p'>(</span><span class='hljl-n'>io</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:lbfgs</span><span class='hljl-p'>],</span><span class='hljl-t'> </span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:status</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:objective</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-sc'>:iter</span><span class='hljl-p'>])</span><span class='hljl-t'>
 </span><span class='hljl-k'>end</span>
 </pre>
 
@@ -943,14 +981,34 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
 
 
 <pre class='hljl'>
-<span class='hljl-nf'>open</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;newton.md&quot;</span><span class='hljl-p'>,</span><span class='hljl-s'>&quot;w&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>io</span><span class='hljl-t'>
-	</span><span class='hljl-nf'>markdown_table</span><span class='hljl-p'>(</span><span class='hljl-n'>io</span><span class='hljl-p'>,</span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:newton</span><span class='hljl-p'>],</span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>objective</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>iter</span><span class='hljl-p'>])</span><span class='hljl-t'>
-</span><span class='hljl-k'>end</span><span class='hljl-t'>
-</span><span class='hljl-nf'>open</span><span class='hljl-p'>(</span><span class='hljl-s'>&quot;lbfgs.md&quot;</span><span class='hljl-p'>,</span><span class='hljl-s'>&quot;w&quot;</span><span class='hljl-p'>)</span><span class='hljl-t'> </span><span class='hljl-k'>do</span><span class='hljl-t'> </span><span class='hljl-n'>io</span><span class='hljl-t'>
-	</span><span class='hljl-nf'>markdown_table</span><span class='hljl-p'>(</span><span class='hljl-n'>io</span><span class='hljl-p'>,</span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:lbfgs</span><span class='hljl-p'>],</span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>objective</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>iter</span><span class='hljl-p'>])</span><span class='hljl-t'>
-</span><span class='hljl-k'>end</span>
+<span class='hljl-nf'>markdown_table</span><span class='hljl-p'>(</span><span class='hljl-n'>stdout</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:newton</span><span class='hljl-p'>],</span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>objective</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>iter</span><span class='hljl-p'>])</span>
 </pre>
 
+
+<pre class="output">
+|       name |    status | objective | elapsed_time |  iter |
+|------------|-----------|-----------|--------------|-------|
+| Problem f1 | exception |       Inf |          Inf |     0 |
+| Problem f2 | exception |       Inf |          Inf |     0 |
+| Problem f3 | exception |       Inf |          Inf |     0 |
+| Problem f4 | exception |       Inf |          Inf |     0 |
+</pre>
+
+
+
+<pre class='hljl'>
+<span class='hljl-nf'>markdown_table</span><span class='hljl-p'>(</span><span class='hljl-n'>stdout</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>stats</span><span class='hljl-p'>[</span><span class='hljl-sc'>:lbfgs</span><span class='hljl-p'>],</span><span class='hljl-n'>cols</span><span class='hljl-t'> </span><span class='hljl-oB'>=</span><span class='hljl-t'> </span><span class='hljl-p'>[</span><span class='hljl-sc'>:name</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>status</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>objective</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>,</span><span class='hljl-oB'>:</span><span class='hljl-n'>iter</span><span class='hljl-p'>])</span>
+</pre>
+
+
+<pre class="output">
+|       name |      status | objective | elapsed_time |  iter |
+|------------|-------------|-----------|--------------|-------|
+| Problem f1 | first_order |   0.0e&#43;00 |      4.8e-01 |     2 |
+| Problem f2 | first_order |   1.3e-16 |      5.2e-04 |    25 |
+| Problem f3 | first_order |  -8.4e&#43;00 |      6.7e-04 |     8 |
+| Problem f4 | first_order |   1.2e-28 |      1.3e-04 |     2 |
+</pre>
 
 
 <p>Either way, our tables should look something like this:</p>
@@ -971,260 +1029,29 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
 <p>In the latex format</p>
 <p><img src="lbfgs.svg" alt="" /></p>
 <p><img src="newton.svg" alt="" /></p>
-<p>To create a performance profile, we use the <strong>Plots</strong> package, along with the desired framework.</p>
+<p>To create a performance profile, we use the <strong>Plots</strong> package, along with the desired framework. The profiles are drawn using &#91;BenchmarkProfiles&#93; through an interface in SolverBenchmark to use <code>stats</code>.</p>
 
 
 <pre class='hljl'>
 <span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>Plots</span><span class='hljl-t'>
-</span><span class='hljl-nf'>plotly</span><span class='hljl-p'>()</span><span class='hljl-t'>
-</span><span class='hljl-nf'>performance_profile</span><span class='hljl-p'>(</span><span class='hljl-n'>stats</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>df</span><span class='hljl-oB'>-&gt;</span><span class='hljl-n'>df</span><span class='hljl-oB'>.</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>)</span>
+</span><span class='hljl-nf'>pyplot</span><span class='hljl-p'>()</span>
+</pre>
+
+
+<pre class="julia-error">
+ERROR: ArgumentError: Package PyPlot not found in current path:
+- Run &#96;import Pkg; Pkg.add&#40;&quot;PyPlot&quot;&#41;&#96; to install the PyPlot package.
+
 </pre>
 
 
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Plots.jl</title>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    </head>
-    <body>
-            <div id="5adddedb-0efc-4f51-a69a-c246f4ea974c" style="width:600px;height:400px;"></div>
-    <script>
-    PLOT = document.getElementById('5adddedb-0efc-4f51-a69a-c246f4ea974c');
-    Plotly.plot(PLOT, [
-    {
-        "xaxis": "x1",
-        "colorbar": {
-            "title": ""
-        },
-        "yaxis": "y1",
-        "text": [
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ],
-        "x": [
-            0.0,
-            8.079191968928743,
-            8.079191968928743,
-            9.309069076537964,
-            9.309069076537964,
-            9.885845937563788,
-            9.885845937563788,
-            19.771691875127576,
-            19.771691875127576
-        ],
-        "showlegend": true,
-        "mode": "lines",
-        "name": "newton",
-        "zmin": -0.1,
-        "legendgroup": "newton",
-        "zmax": 0.1,
-        "line": {
-            "color": "rgba(0, 154, 250, 1.000)",
-            "shape": "linear",
-            "dash": "solid",
-            "width": 1
-        },
-        "y": [
-            0.25,
-            0.25,
-            0.5,
-            0.5,
-            0.75,
-            0.75,
-            1.0,
-            1.0,
-            1.25
-        ],
-        "type": "scatter",
-        "hoverinfo": "text"
-    },
-    {
-        "xaxis": "x1",
-        "colorbar": {
-            "title": ""
-        },
-        "yaxis": "y1",
-        "text": [
-            null,
-            null,
-            null,
-            null,
-            null
-        ],
-        "x": [
-            0.0,
-            1.3805098947704926,
-            1.3805098947704926,
-            19.771691875127576,
-            19.771691875127576
-        ],
-        "showlegend": true,
-        "mode": "lines",
-        "name": "lbfgs",
-        "zmin": -0.1,
-        "legendgroup": "lbfgs",
-        "zmax": 0.1,
-        "line": {
-            "color": "rgba(227, 111, 71, 1.000)",
-            "shape": "linear",
-            "dash": "solid",
-            "width": 1
-        },
-        "y": [
-            0.75,
-            0.75,
-            1.0,
-            1.0,
-            1.25
-        ],
-        "type": "scatter",
-        "hoverinfo": "text"
-    }
-]
-, {
-    "showlegend": true,
-    "xaxis": {
-        "showticklabels": true,
-        "gridwidth": 0.5,
-        "tickvals": [
-            0.0,
-            2.5,
-            5.0,
-            7.5,
-            10.0
-        ],
-        "visible": true,
-        "ticks": "inside",
-        "range": [
-            0.0,
-            10.874430531320169
-        ],
-        "domain": [
-            0.09128390201224845,
-            0.9934383202099738
-        ],
-        "tickmode": "array",
-        "linecolor": "rgba(0, 0, 0, 1.000)",
-        "showgrid": true,
-        "title": "Within this factor of the best (log scale)",
-        "mirror": false,
-        "tickangle": 0,
-        "showline": true,
-        "gridcolor": "rgba(0, 0, 0, 0.100)",
-        "titlefont": {
-            "color": "rgba(0, 0, 0, 1.000)",
-            "family": "sans-serif",
-            "size": 15
-        },
-        "tickcolor": "rgb(0, 0, 0)",
-        "ticktext": [
-            "0.0",
-            "2.5",
-            "5.0",
-            "7.5",
-            "10.0"
-        ],
-        "zeroline": false,
-        "type": "-",
-        "tickfont": {
-            "color": "rgba(0, 0, 0, 1.000)",
-            "family": "sans-serif",
-            "size": 11
-        },
-        "zerolinecolor": "rgba(0, 0, 0, 1.000)",
-        "anchor": "y1"
-    },
-    "paper_bgcolor": "rgba(255, 255, 255, 1.000)",
-    "annotations": [],
-    "height": 400,
-    "margin": {
-        "l": 0,
-        "b": 20,
-        "r": 0,
-        "t": 20
-    },
-    "plot_bgcolor": "rgba(255, 255, 255, 1.000)",
-    "yaxis": {
-        "showticklabels": true,
-        "gridwidth": 0.5,
-        "tickvals": [
-            0.0,
-            0.25,
-            0.5,
-            0.75,
-            1.0
-        ],
-        "visible": true,
-        "ticks": "inside",
-        "range": [
-            0.0,
-            1.1
-        ],
-        "domain": [
-            0.07581474190726165,
-            0.9901574803149606
-        ],
-        "tickmode": "array",
-        "linecolor": "rgba(0, 0, 0, 1.000)",
-        "showgrid": true,
-        "title": "Proportion of problems",
-        "mirror": false,
-        "tickangle": 0,
-        "showline": true,
-        "gridcolor": "rgba(0, 0, 0, 0.100)",
-        "titlefont": {
-            "color": "rgba(0, 0, 0, 1.000)",
-            "family": "sans-serif",
-            "size": 15
-        },
-        "tickcolor": "rgb(0, 0, 0)",
-        "ticktext": [
-            "0.00",
-            "0.25",
-            "0.50",
-            "0.75",
-            "1.00"
-        ],
-        "zeroline": false,
-        "type": "-",
-        "tickfont": {
-            "color": "rgba(0, 0, 0, 1.000)",
-            "family": "sans-serif",
-            "size": 11
-        },
-        "zerolinecolor": "rgba(0, 0, 0, 1.000)",
-        "anchor": "x1"
-    },
-    "legend": {
-        "tracegroupgap": 0,
-        "bordercolor": "rgba(0, 0, 0, 1.000)",
-        "bgcolor": "rgba(255, 255, 255, 1.000)",
-        "font": {
-            "color": "rgba(0, 0, 0, 1.000)",
-            "family": "sans-serif",
-            "size": 11
-        },
-        "y": 1.0,
-        "x": 1.0
-    },
-    "width": 600
-}
-);
-    </script>
+<pre class='hljl'>
+<span class='hljl-nf'>performance_profile</span><span class='hljl-p'>(</span><span class='hljl-n'>stats</span><span class='hljl-p'>,</span><span class='hljl-t'> </span><span class='hljl-n'>df</span><span class='hljl-oB'>-&gt;</span><span class='hljl-n'>df</span><span class='hljl-oB'>.</span><span class='hljl-n'>elapsed_time</span><span class='hljl-p'>)</span>
+</pre>
 
-    </body>
-</html>
 
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAGQCAIAAAD9V4nPAAAABmJLR0QA/wD/AP+gvaeTAAAa60lEQVR4nO3dbVBU59nA8XvfQIIEKcjGxEkfdHSs4HuqVJsmdYJNxxiCVhSBTIg79SWO2hapU9CYZCwRjU7TqPWthMaMXWqM1aZ2pW2a4phJR2OwKqmZKEYcM7hgEqC7sC7n+bBPeBiWBdSDR/b6/z5k5N6T47V3Tvy7u+xi0jRNAQAgldnoAQAAMBIhBACIRggBAKIRQgCAaIQQACAaIQQAiEYIAQCiEUIAgGiEEAAgGiEEAIimZwirq6s9Ho+OJxSura3N7/cbPUVYuXHjBp8pqCMuUd1xieqrra2tN/upZwjnzZt37tw5HU8oXGtr61dffWX0FGHliy++uHHjhtFThA8uUd1xieqrtbW1N/vJU6MAANEIIQBANEIIABCNEAIARCOEAADRCCEAQDRCCAAQjRACAEQjhAAA0QghAEA0QggAEI0QAgBEI4QAANEIIQBANEIIABCNEAIARCOEAADRCCEAQDRCCAAQzWr0AAAg17Vr12bMmNH+pd/vN5vNJpPJwJHuWt///vc3b97cF2cmhABgmNbW1itXrrhcLqMHudv94x//eO+99/ro5IQQAIxks9kmTJhg9BR3u0uXLvVdCHmNEAAgGiEEAIhGCAEAohFCAIBohBAAIBohBACIZlZK+f3+vLy8jquNjY1FRUUZGRlr1qxpbGzscgUAgDBgPnDgwIoVK2prazuuOp1Ou93udDoTExPLy8u7XAEAIAyYhw0blpOT02n12LFj6enpERER6enplZWVXa4AABAGrOPHjw9era+vt9vtSim73d7Q0NDlSjCPx1NSUpKYmBh8U0FBwaBBg/QcXACv1+v1eq1WPv1HN01NTWaz2WazGT1ImOASvX1NTU2aphk9hc4KCgpKSkp0P63f77/ZF+a8Xm9MTEyP/8t3fQVrmhb41FdN09ra2rpcCWY2mwcPHjxkyJDgm2w2Gx8je7NMXzN6kPDBluqL/bx9Ybl7p06d6qMz3+x29fL67DqE8fHxdXV1Q4cOdbvdCQkJXa4Ei4yMzMvLmzRp0k0NilCsVqvFYhk4cKDRg4QPr9c7cOBAHhHqhUv09kVHR99tLUxLS/vFL36xb98+t9udnZ09Z86choaG11577fTp01FRUSkpKQ6H44UXXsjOzp4yZcquXbuOHDmyf/9+k8k0f/789evX/+53v1NKLVq0aOPGjdu3bz958qTJZJo4ceKSJUvuvffe4JP3frBbuNisVqvZ3PObIzqHsKqqaty4campqS6X69lnn3W5XFOnTlVKBa8AAPrCtnNtR6/coedLnxttTnugc4nr6up27Njx0UcfFRUVzZkzZ/PmzY899tjPf/5zn8934MCBLVu2pKamnjx5csqUKVVVVVFRURcuXLDZbGazefjw4S+++GJaWtqOHTs2bNhgtVrfeOMNpdTWrVt37NixatWq4JPfmbvZvc4hzM/Pr6ioyM3NLS4uzsrKGjFixOrVq5VSwSsAgL4w1W66P/oO/V4jY7tYnDVrlslkmjBhQmtrq1Kqqqrqgw8+aL81Njb22WefXb9+fXNzs8fjmT59+qlTp2w2W2pqasdHtx988MGePXsiIyOVUnl5eT/+8Y+7PPnd4P9CWFFR0fEXAwcOXL9+fcfjglcAAH1hfLxpfLyRz5fec889Hb8cOHDgzp07A9//4fF4GhsbBw8e7PF43nvvvZSUlAkTJuzfv99ms82cObPTeTp20e/3d3nyuwGfLAMA6M53v/vdffv2eb3e69evP//88/v27TOZTKmpqXv37h03blxycvJ//vOf8+fPd3wPwo0bNyZPnlxaWtra2trS0lJaWjplyhQD70L3CCEAoDt5eXltbW25ubkOh8Nutwee5JwyZcq1a9fGjRsXGRk5fPjwkSNHRkREBI6fPHny008/vXTp0paWluzs7NzcXJ/Pt2TJEkPvRHdMOr6FZezYsaWlpXzXqF68Xq/H44mLizN6kPDhdrtjY2P5rlG9cInevitXrkyePPnKlStGD3K3O3jw4Ouvv37w4MGb+re8Xq/FYunxf3keEQIARCOEAADRCCEAQDRCCAAQjRACAEQjhACA/5eWltb+z05KS0vnzp17xyfqc/z8FABArxw+fLi0tNToKfTHI0IAQK80NjbGxnb14aT9HCEEAHShrKxszpw5y5cvD7zff+3atUqpRYsWNTc3b9q0ae7cuc8888zRo0cDT6L+5S9/yczMnD179ttvv23w3DePp0YB4O7y3w//0VpTfWd+r3smPhrxP9/q8qa2trby8vLXX39969atv/zlL9t/vtKWLVuUUm+88YbZbN66dWvg4N/85jdbtmyx2WyvvvpqRkbGnRleL4QQAO4ulphB1oT778zvZRoQ8mdBPP744xaL5Uc/+tHTTz/dcf348eM7d+4cMGCAUuqZZ57585//rJQaO3bsnj170tLSiouL+3pm3RFCALi7RI4YHzlifM/H3REmk8lisXRc8fv97T9fqf3nv7/wwgsnTpw4evToO++8U1JScqenvD28RggA6ILL5fL7/W+99VbHn6+klEpNTf3tb3/b0tLS2tpaVlYWWMzJyRkyZEhOTs4nn3xixLC3hRACALpgtVozMzPPnDmzePHijutLlixpbW3NyspasmTJ6NGjo6OjlVLz5s1bvnx5fn5++0+i70d4ahQA8P8qKira/5mTkxN807///e+8vLzVq1crpS5fvjxo0CCl1JNPPvnkk08aMK4eeEQIALgJZ86c+fWvf339+nW3271r166HH37Y6IluFyEEANyE3NzcgQMH5uXlLV26NC4ubsGCBUZPdLt4ahQAcBOioqICz4uGDR4RAgBEI4QAANEIIQBANEIIABCNEAIARCOEAADRePsEABipqanplVdeMXqKu92ZM2f67uSEEAAMc//992/fvv3kyZOBL71eb0RERPuPdEC7b3zjG4888kgfnZwQAoBhTCbTggUL2j+cxe12x8bG2mw2Y6eShr93AABEI4QAANEIIQBANEIIABCNEAIARCOEAADRCCEAQDRCCAAQjRACAEQjhAAA0QghAEA0QggAEI0QAgBEI4QAANEIIQBANEIIABCNEAIARCOEAADRCCEAQDRCCAAQjRACAEQjhAAA0QghAEA0QggAEI0QAgBEI4QAANEIIQBANEIIABCNEAIARCOEAADRCCEAQDRCCAAQjRACAEQjhAAA0QghAEA0QggAEI0QAgBEI4QAANEIIQBANEIIABCNEAIARCOEAADRCCEAQDRCCAAQzVpUVHT27NmUlJSCgoKYmJjAalpaWqfjvvWtb1VXVwd+PXPmzJUrV97RMQEA6BtWu92+du3aHTt2lJeXL1y4MLB66NCh9iOcTqfP5zty5IjT6YyKilJKWSwWY4YFAEBv5vT09IiIiPT09MrKyvbVqK99/vnn586dS09P9/v9hYWFmZmZxcXFzc3NBk4MAICOrHa7XSllt9sbGho63ebz+V555ZVVq1Z98cUXI0aMWLx4cWJi4vbt27dt21ZYWBh8rqampqVL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"  />
 
 
 
