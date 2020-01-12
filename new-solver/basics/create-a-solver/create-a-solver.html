@@ -666,8 +666,19 @@ div.title {text-align: center;}
 
 <pre class='hljl'>
 <span class='hljl-k'>using</span><span class='hljl-t'> </span><span class='hljl-n'>Pkg</span><span class='hljl-t'>
-</span><span class='hljl-so'>pkg&quot;activate .&quot;</span><span class='hljl-t'>
-</span><span class='hljl-k'>if</span><span class='hljl-t'> </span><span class='hljl-kc'>false</span><span class='hljl-t'>
+</span><span class='hljl-so'>pkg&quot;activate .&quot;</span>
+</pre>
+
+
+<pre class="output">
+Activating environment at &#96;~/build/joaoluisro/JSOTutorials.jl/basics/create
+-a-solver/Project.toml&#96;
+</pre>
+
+
+
+<pre class='hljl'>
+<span class='hljl-k'>if</span><span class='hljl-t'> </span><span class='hljl-kc'>false</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add NLPModels&quot;</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add SolverTools&quot;</span><span class='hljl-t'>
  </span><span class='hljl-so'>pkg&quot;add SolverBenchmark&quot;</span><span class='hljl-t'>
@@ -682,7 +693,74 @@ div.title {text-align: center;}
 <pre class="output">
 Updating registry at &#96;~/.julia/registries/General&#96;
   Updating git-repo &#96;https://github.com/JuliaRegistries/General.git&#96;
-&#91;?25l&#91;2K&#91;?25h
+erOutputs ───────── v0.5.3
+ Installed NaNMath ────────────── v0.3.3
+ Installed DiffResults ────────── v0.0.4
+ Installed DiffRules ──────────── v0.1.0
+ Installed MbedTLS ────────────── v0.6.8
+ Installed StatsBase ──────────── v0.32.0
+ Installed PlotUtils ──────────── v0.6.1
+ Installed Plots ──────────────── v0.28.1
+ Installed BenchmarkProfiles ──── v0.3.0
+ Installed IterTools ──────────── v1.3.0
+ Installed FFMPEG ─────────────── v0.2.3
+ Installed Measures ───────────── v0.3.0
+ Installed CategoricalArrays ──── v0.7.3
+ Installed GeometryTypes ──────── v0.7.6
+ Installed DataFrames ─────────── v0.19.4
+ Installed HTTP ───────────────── v0.8.8
+ Installed LinearOperators ────── v0.7.1
+ Installed BinDeps ────────────── v0.8.10
+ Installed PlotThemes ─────────── v1.0.0
+ Installed ProgressMeter ──────── v1.2.0
+ Installed Showoff ────────────── v0.3.1
+ Installed BenchmarkTools ─────── v0.4.3
+ Installed PkgBenchmark ───────── v0.2.6
+ Installed ArgCheck ───────────── v1.0.1
+ Installed Requires ───────────── v0.5.2
+ Installed RecipesBase ────────── v0.7.0
+ Installed FastClosures ───────── v0.3.2
+ Installed StaticArrays ───────── v0.12.1
+ Installed SpecialFunctions ───── v0.8.0
+ Installed LaTeXTabulars ──────── v0.1.1
+ Installed GitHub ─────────────── v5.1.3
+ Installed DataStructures ─────── v0.17.6
+ Installed ColorTypes ─────────── v0.8.0
+ Installed InvertedIndices ────── v1.0.0
+ Installed ForwardDiff ────────── v0.10.7
+ Installed NLPModels ──────────── v0.9.0
+ Installed SolverTools ────────── v0.1.6
+ Installed FixedPointNumbers ──── v0.6.1
+ Installed Crayons ────────────── v4.0.1
+ Installed SortingAlgorithms ──── v0.3.1
+ Installed Colors ─────────────── v0.9.6
+ Installed Reexport ───────────── v0.2.0
+ Installed OrderedCollections ─── v1.1.0
+ Installed Formatting ─────────── v0.4.1
+ Installed PooledArrays ───────── v0.5.2
+ Installed Parameters ─────────── v0.12.0
+ Installed URIParser ──────────── v0.4.0
+ Installed BinaryProvider ─────── v0.5.8
+ Installed CommonSubexpressions ─ v0.2.0
+ Installed IniFile ────────────── v0.5.0
+ Installed Krylov ─────────────── v0.3.0
+ Installed PrettyTables ───────── v0.7.0
+ Installed JSOSolvers ─────────── v0.1.0
+ Installed Missings ───────────── v0.4.3
+ Installed GR ─────────────────── v0.44.0
+ Installed Contour ────────────── v0.5.1
+ Installed SolverBenchmark ────── v0.1.0
+  Building GR ──────────────→ &#96;~/.julia/packages/GR/oiZD3/deps/build.log&#96;
+  Building FFMPEG ──────────→ &#96;~/.julia/packages/FFMPEG/bkWgb/deps/build.lo
+g&#96;
+  Building Plots ───────────→ &#96;~/.julia/packages/Plots/AXUqs/deps/build.log
+&#96;
+  Building MbedTLS ─────────→ &#96;~/.julia/packages/MbedTLS/X4xar/deps/build.l
+og&#96;
+  Building PkgBenchmark ────→ &#96;~/.julia/packages/PkgBenchmark/fIDIa/deps/bu
+ild.log&#96;
+  Building SpecialFunctions → &#96;~/.julia/packages/SpecialFunctions/ne2iw/dep
+s/build.log&#96;
 </pre>
 
 
@@ -693,7 +771,8 @@ Updating registry at &#96;~/.julia/registries/General&#96;
 
 
 <pre class="output">
-Status &#96;~/repos/JSOTutorials.jl/basics/create-a-solver/Project.toml&#96;
+Status &#96;~/build/joaoluisro/JSOTutorials.jl/basics/create-a-solver/Proje
+ct.toml&#96;
   &#91;10dff2fc&#93; JSOSolvers v0.1.0
   &#91;a4795742&#93; NLPModels v0.9.0
   &#91;91a5bcdd&#93; Plots v0.28.1
@@ -811,13 +890,13 @@ newton &#40;generic function with 1 method&#41;
 <pre class="output">
 Generic Execution stats
   status: &quot;first-order stationary&quot;
-  objective value: 1.0351524645125576e-12
+  objective value: 1.0351524645125594e-12
   primal feasibility: 0.0
   dual feasibility: Inf
   primal feasibility: 0.0
-  solution: &#91;0.000451093  0.000902186&#93;
+  solution: &#91;0.00045109298973257644  0.0009021859794651527&#93;
   iterations: 19
-  elapsed time: 1.270258903503418
+  elapsed time: 0.8482589721679688
 </pre>
 
 
@@ -840,8 +919,8 @@ Generic Execution stats
 
 <pre class="output">
 Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
-  :newton &#61;&gt; 4×30 DataFrames.DataFrame. Omitted printing of 25 columns…
-  :lbfgs  &#61;&gt; 4×30 DataFrames.DataFrame. Omitted printing of 25 columns…
+  :newton &#61;&gt; 4×30 DataFrames.DataFrame. Omitted printing of 23 columns…
+  :lbfgs  &#61;&gt; 4×30 DataFrames.DataFrame. Omitted printing of 23 columns…
 </pre>
 
 
@@ -911,9 +990,9 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
     <body>
-            <div id="f11ca371-f014-4125-98ed-ee8e0c58e59a" style="width:576px;height:384px;"></div>
+            <div id="5adddedb-0efc-4f51-a69a-c246f4ea974c" style="width:600px;height:400px;"></div>
     <script>
-    PLOT = document.getElementById('f11ca371-f014-4125-98ed-ee8e0c58e59a');
+    PLOT = document.getElementById('5adddedb-0efc-4f51-a69a-c246f4ea974c');
     Plotly.plot(PLOT, [
     {
         "xaxis": "x1",
@@ -934,14 +1013,14 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
         ],
         "x": [
             0.0,
-            8.693236593058849,
-            8.693236593058849,
-            10.469956808261566,
-            10.469956808261566,
-            11.419598449968905,
-            11.419598449968905,
-            22.83919689993781,
-            22.83919689993781
+            8.079191968928743,
+            8.079191968928743,
+            9.309069076537964,
+            9.309069076537964,
+            9.885845937563788,
+            9.885845937563788,
+            19.771691875127576,
+            19.771691875127576
         ],
         "showlegend": true,
         "mode": "lines",
@@ -984,10 +1063,10 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
         ],
         "x": [
             0.0,
-            0.6860607909109173,
-            0.6860607909109173,
-            22.83919689993781,
-            22.83919689993781
+            1.3805098947704926,
+            1.3805098947704926,
+            19.771691875127576,
+            19.771691875127576
         ],
         "showlegend": true,
         "mode": "lines",
@@ -1019,22 +1098,20 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
         "gridwidth": 0.5,
         "tickvals": [
             0.0,
-            2.0,
-            4.0,
-            6.0,
-            8.0,
-            10.0,
-            12.0
+            2.5,
+            5.0,
+            7.5,
+            10.0
         ],
         "visible": true,
         "ticks": "inside",
         "range": [
             0.0,
-            12.561558294965797
+            10.874430531320169
         ],
         "domain": [
-            0.09508739792942547,
-            0.9931649168853893
+            0.09128390201224845,
+            0.9934383202099738
         ],
         "tickmode": "array",
         "linecolor": "rgba(0, 0, 0, 1.000)",
@@ -1051,13 +1128,11 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
         },
         "tickcolor": "rgb(0, 0, 0)",
         "ticktext": [
-            "0",
-            "2",
-            "4",
-            "6",
-            "8",
-            "10",
-            "12"
+            "0.0",
+            "2.5",
+            "5.0",
+            "7.5",
+            "10.0"
         ],
         "zeroline": false,
         "type": "-",
@@ -1071,7 +1146,7 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
     },
     "paper_bgcolor": "rgba(255, 255, 255, 1.000)",
     "annotations": [],
-    "height": 384,
+    "height": 400,
     "margin": {
         "l": 0,
         "b": 20,
@@ -1096,8 +1171,8 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
             1.1
         ],
         "domain": [
-            0.07897368948673088,
-            0.989747375328084
+            0.07581474190726165,
+            0.9901574803149606
         ],
         "tickmode": "array",
         "linecolor": "rgba(0, 0, 0, 1.000)",
@@ -1142,7 +1217,7 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
         "y": 1.0,
         "x": 1.0
     },
-    "width": 576
+    "width": 600
 }
 );
     </script>
@@ -1157,7 +1232,7 @@ Dict&#123;Symbol,DataFrames.DataFrame&#125; with 2 entries:
           <div class="footer"><p>
           Published from <a href="create-a-solver.jmd">create-a-solver.jmd</a> using
           <a href="http://github.com/mpastell/Weave.jl">Weave.jl</a>
-           on 2019-12-19.
+           on 2020-01-12.
           <p></div>
 
 
