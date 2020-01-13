@@ -15,7 +15,7 @@ pkg"instantiate"
 pkg"status"
 
 
-pkgs = ["LinearOperators"]
+pkgs = ["NLPModels", "SolverTools", "SolverBenchmark", "JSOSolvers"]
 
 using Pkg
 ctx=Pkg.Types.Context()
@@ -36,10 +36,10 @@ function newton(nlp :: AbstractNLPModel;
                 max_time :: Float64 = 30.0,
                 max_iter :: Int = 100)
 
-	fx = obj(nlp, x)
-	∇fx = grad(nlp, x)
-	nrmgrad = norm(∇fx)
-	∇²fx = Symmetric(hess(nlp, x), :L)
+  fx = obj(nlp, x)
+  ∇fx = grad(nlp, x)
+  nrmgrad = norm(∇fx)
+  ∇²fx = Symmetric(hess(nlp, x), :L)
 
   T = eltype(x)
   k = 0
