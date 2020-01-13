@@ -2,16 +2,30 @@
 using Pkg
 pkg"activate ."
 if false
- pkg"add NLPModels"
- pkg"add SolverTools"
- pkg"add SolverBenchmark"
- pkg"add Plots"
- pkg"add PyPlot"
- pkg"add LinearAlgebra"
- pkg"add JSOSolvers"
+  pkg"add NLPModels"
+  pkg"add SolverTools"
+  pkg"add SolverBenchmark"
+  pkg"add Plots"
+  pkg"add PyPlot"
+  pkg"add LinearAlgebra"
+  pkg"add JSOSolvers"
+  pkg"add Weave"
 end
 pkg"instantiate"
 pkg"status"
+
+
+pkgs = ["LinearOperators"]
+
+using Pkg
+ctx=Pkg.Types.Context()
+display("text/html", "<img src=\"https://img.shields.io/badge/julia-$VERSION-3a5fcc.svg?style=flat-square&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAB+FBMVEUAAAA3lyU3liQ4mCY4mCY3lyU4lyY1liM3mCUskhlSpkIvkx0zlSEeigo5mSc8mio0liKPxYQ/nC5NozxQpUBHoDY3lyQ5mCc3lyY6mSg3lyVPpD9frVBgrVFZqUpEnjNgrVE3lyU8mio8mipWqEZhrVJgrVFfrE9JoTkAVAA3lyXJOjPMPjNZhCowmiNOoz1erE9grVFYqUhCnjFmk2KFYpqUV7KTWLDKOjK8CADORj7GJx3SJyVAmCtKojpOoz1DnzFVeVWVSLj///+UV7GVWbK8GBjPTEPMQTjPTUXQUkrQSEGZUycXmg+WXbKfZ7qgarqbYraSVLCUV7HLPDTKNy7QUEjUYVrVY1zTXFXPRz2UVLmha7upeMCqecGlcb6aYLWfaLrLPjXLPjXSWFDVZF3VY1zVYlvRTkSaWKqlcr6qesGqecGpd8CdZbjo2+7LPTTKOS/QUUnVYlvVY1zUXVbPSD6TV7OibLuqecGqecGmc76aYbaibLvKOC/SWlPMQjrQUEjRVEzPS0PLPDL7WROZX7WgarqibLucY7eTVrCVWLLLOzLGLCLQT0bIMynKOC7FJx3MPjV/Vc+odsCRUa+SVLCDPaWVWLKWWrLJOzPHOTLKPDPLPDPLOzLLPDOUV6+UV7CVWLKVWLKUV7GUWLGPUqv///8iGqajAAAAp3RSTlMAAAAAAAAAAAAAABAZBAAAAABOx9uVFQAAAB/Y////eQAAADv0////pgEAAAAAGtD///9uAAAAAAAAAAcOQbPLfxgNAAAAAAA5sMyGGg1Ht8p6CwAAFMf///94H9j///xiAAAw7////65K+f///5gAABjQ////gibg////bAAAAEfD3JwaAFfK2o0RAAAAAA4aBQAAABEZAwAAAAAAAAAAAAAAAAAAAIvMfRYAAAA6SURBVAjXtcexEUBAFAXAfTM/IDH6uAbUqkItyAQYR26zDeS0UxieBvPVbArjXd9GS295raa/Gmu/A7zfBRgv03cCAAAAAElFTkSuQmCC\">")
+for p in pkgs
+  uuid=ctx.env.project.deps[p]
+  v=ctx.env.manifest[uuid].version
+  c=string(hash(p) % 0x1000000, base=16)
+  display("text/html", "<img src=\"https://img.shields.io/badge/$p-$v-brightgreen?color=$c\">")
+end
 
 
 using NLPModels, LinearAlgebra, SolverTools
@@ -40,29 +54,29 @@ function newton(nlp :: AbstractNLPModel;
 
     @info log_row(Any[k, fx, nrmgrad])
 
-    newton_step = -∇²fx\∇fx
-    d = dot(step, -∇fx) < 0 ? newton_step : -∇fx
+    step = -∇²fx\∇fx
+    d = dot(step, ∇fx) < 0 ? step : -∇fx
     t = one(T)
     α = 0.5
-		slope = dot(∇fx, t*d)
-		xt = x + t*d
-		ft = obj(nlp, xt)
+    slope = dot(∇fx, t*d)
+    xt = x + t*d
+    ft = obj(nlp, xt)
 
     while ft > fx + α * slope
       t *= 0.5
-			xt = x + t*d
-			ft = obj(nlp, xt)
-			slope =  dot(∇fx, t*d)
+      xt = x + t*d
+      ft = obj(nlp, xt)
+      slope =  dot(∇fx, t*d)
     end
 
     x += t*d
 
-		fx = obj(nlp, x)
+    fx = obj(nlp, x)
     ∇fx = grad(nlp, x)
     nrmgrad = norm(∇fx)
     ∇²fx = Symmetric(hess(nlp, x), :L)
 
-		k += 1
+    k += 1
     el_time = time() - start_time
     tired = el_time > max_time || k ≥ max_iter
     optimal = nrmgrad < max_tol
