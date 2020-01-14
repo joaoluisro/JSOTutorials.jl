@@ -1,18 +1,15 @@
 
 using Pkg
 pkg"activate ."
-if false
-  pkg"add NLPModels"
-  pkg"add SolverTools"
-  pkg"add SolverBenchmark"
-  pkg"add Plots"
-  pkg"add PyPlot"
-  pkg"add LinearAlgebra"
-  pkg"add JSOSolvers"
-  pkg"add Weave"
-end
+pkg"add NLPModels"
+pkg"add SolverTools"
+pkg"add SolverBenchmark"
+pkg"add Plots"
+pkg"add PyPlot"
+pkg"add LinearAlgebra"
+pkg"add JSOSolvers"
+pkg"add Weave"
 pkg"instantiate"
-pkg"status"
 
 
 pkgs = ["NLPModels", "SolverTools", "SolverBenchmark", "JSOSolvers"]
@@ -100,8 +97,8 @@ function newton(nlp :: AbstractNLPModel;
 end
 
 
-	using SolverTools
-	SolverTools.show_statuses()
+using SolverTools
+SolverTools.show_statuses()
 
 
 f(x) = (x[1]^2 + x[2]^2)^2
